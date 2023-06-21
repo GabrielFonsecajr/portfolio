@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU CABEÇALHO -->
+    <div class="cabeçalho-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gabriel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="selecionar()">INICIO</a></li>
+                    <li><a href="#sobremimm" onclick="selecionar()">SOBRE MIM</a></li>
+                    <li><a href="#portfolio" onclick="selecionar()">PORTFOLIO</a></li>
+                    <li><a href="#contato" onclick="selecionar()">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+
+    <section id="inicio" class="inicio">
+        <div class="banner">
+            <div class="cabeçalho-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>GABRIEL FONSECA</h1>
+            <h2>Desenvolvedor FrontEnd Junior</h2>
+            <div class="redes">
+                <a href="https://github.com/GabrielFonsecajr?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-fonseca-junior/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="sobremim" class="sobremim">
+        <div class="conteudo-sobremim">
+            <h2 class="hidden">Sobre Mim</h2>
+            <p class="hidden">Busco realizar meu sonho
+                de ingressar no mercado de trabalho
+                como programador. Estudo
+                diariamente através da universidade
+                e de conteúdos gratuitos da internet. No momento estou trabalhando em projetos para o portfolio e busco vaga como júnior ou estagiário.</p>
+
+            <div class="fila">               
+                <div class="coluna">
+                    <h3 class="hidden">Dados Pessoais</h3>
+                    <ul>
+                        <li class="hidden">
+                            <strong>Nascimento</strong>
+                            11-10-1999
+                        </li>
+                        <li class="hidden">
+                            <strong>Celular</strong>
+                            51 99534-0776
+                        </li>
+                        <li class="hidden">
+                            <strong>Email</strong>
+                            gabrieldosssantos42r@gmail.com
+                        </li>
+                        <li class="hidden">
+                            <strong>Localização</strong>
+                            RS, São Leopoldo, São borja, Rua E.
+                        </li>
+                        <li class="hidden">
+                            <strong>Cargo</strong>
+                            <span>DESENVOLVEDOR</span>
+                        </li>
+                    </ul>
+                </div>                
+        <div>
+            <button class="hidden">
+                <a href="curriculo.pdf" download="curriculo.pdf" type="application/pdf">
+                    Baixar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="conteudo-sobremim">
+            <h2 class="hidden">Portfolio</h2>
+            <div class="galeria">
+                <div class="projeto">
+                    <img src="img/embreve.jpg" alt="Em breve" class="hidden">
+                    <div class="overlay">
+                        <h3>Em construção</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/embreve.jpg" alt="Em breve" class="hidden">
+                    <div class="overlay">
+                        <h3>Em construção</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/embreve.jpg" alt="Em breve" class="hidden">
+                    <div class="overlay">
+                        <h3>Em construção</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/embreve.jpg" alt="Em breve" class="hidden">
+                    <div class="overlay">
+                        <h3>Em construção</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/embreve.jpg" alt="Em breve" class="hidden">
+                    <div class="overlay">
+                        <h3>Em construção</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="img/embreve.jpg" alt="Em breve" class="hidden">
+                    <div class="overlay">
+                        <h3>Em construção</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="conteudo-sobremim">
+            <h2 class="hidden">Contato</h2>
+            <div class="fila">
+                <div class="coluna">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="d0cb057b-25b7-4962-8102-29e7fad7655b">
+                    <input type="text" name="name" placeholder="Seu nome" required class="hidden">
+                    <input type="text" name="email" placeholder="Seu Email" required class="hidden">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mensagem" required class="hidden"></textarea>
+                    <button type="submit" class="hidden" >
+                        Enviar Mensagem<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/portfolio/">
+                </form>
+                </div>
+
+    </section>
+    <footer>
+        <a href="#inicio" class="acima">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/GabrielFonsecajr?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-fonseca-junior/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
